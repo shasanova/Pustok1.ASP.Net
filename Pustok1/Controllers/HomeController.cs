@@ -22,7 +22,7 @@ namespace Pustok1.Controllers
             HomeViewModel model = new()
             {
                 Sliders = _context.Sliders.ToList(),
-                Features = _context.Features.ToList()
+                Features = _context.Features.Take(4).ToList()
 
             };
             
